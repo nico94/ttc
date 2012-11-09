@@ -16,9 +16,9 @@
 public class Spieler {
 
 	
-	private int siege;
-	private int niederlagen;
-	private int punkte;
+	private int siege = 0;
+	private int niederlagen = 0;
+	private int punkte = 0;
 	private String name;
 	private boolean disqualification;
 	
@@ -28,21 +28,39 @@ public class Spieler {
 	  public Spieler(int siege, int niederlagen, int punkte, String name, boolean disqualification)
 	 
 	  {
-		  this.setSiege(siege);
+		  this.siege = siege;
 		  this.niederlagen = niederlagen;
 		  this.punkte = punkte;
 		  this.name = name;
 		  this.disqualification = disqualification;
 	  }
 
-	  //	  Setter & Getter 
-	public int getSiege() {
-		return siege;
-	}
-
-
-	public void setSiege(int siege) {
-		this.siege = siege;
-	}
+	  //Abfragen
+	  public int punkteabfrage (){
+		  return punkte;}
+	  public int siegeabfrage () {
+		  return siege;}
+	  public int niederlagenabfrage () {
+		  return niederlagen;}
+	  
+	  //Methoden
+	  public void wins () {
+		   siege =+ 1;
+		   punkte =+ 3;
+	  }
+	  public void loose () {
+		   niederlagen =+ 1;
+		   punkte =- 3;
+	  }
+	   
+	  
+	  
+	  
 }
-
+	  
+	  
+	  
+	  
+	  
+	  
+	 
