@@ -6,12 +6,12 @@ public class Spieler {
 	private int niederlagen;
 	private int punkte;
 	private String name;
-	private bool disqualification;
+	private boolean disqualification;
 	
 	
 
 	// Spielerkonstruktor	
-	  public Spieler(int siege, int niederlagen, int punkte, String name, bool disqualification)
+	  public Spieler(int siege, int niederlagen, int punkte, String name, boolean disqualification)
 	  {
 		  this.setSiege(siege);
 		  this.niederlagen = niederlagen;
